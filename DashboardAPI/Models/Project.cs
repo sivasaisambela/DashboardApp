@@ -8,12 +8,12 @@ namespace DashboardAPI.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int ProjectId { get; set; }
+        public int ProjectID { get; set; }
         public string ProjectName { get; set; }
 
-        [NotMapped]
-       // [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
-        public DateTime DateOfStart { get; set; }
+       // [NotMapped]
+       //// [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+       // public DateTime DateOfStart { get; set; }
 
         public int TeamSize { get; set; }
 
